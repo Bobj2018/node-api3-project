@@ -8,7 +8,7 @@ const server = express();
 
 
 server.use(express.json())
-server.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
 server.use(cors())
 
 
@@ -20,10 +20,10 @@ server.get('/', (req, res) => {
 });
 
 server.get("/", (req, res) => {
-  res.status(200).send(<h1>Welcome to the API</h1>)
+  res.status(200).send("<h1>Welcome to the API</h1>")
 })
 
-// custom middleware
+// custom middlewaregit 
 
 function logger(req, res, next) {
   
